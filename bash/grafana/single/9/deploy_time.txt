@@ -1,0 +1,1 @@
+Deploy statrted at 09:30:34.009 | In seconds: 60.237085353 | In minutes: 1.00395142255000000000

@@ -1,5 +1,5 @@
-# READINGS 1-10
-
+# READINGS 1-10 bash grafana single
+\n
 ```
 Deploy statrted at 09:14:34.672 | In seconds: 58.982585548 | In minutes: .98304309246666666666
 Deploy statrted at 09:16:34.937 | In seconds: 57.925129938 | In minutes: .96541883230000000000

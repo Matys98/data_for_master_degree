@@ -1,0 +1,14 @@
+# READINGS 1-10 fabric grafana split
+\n
+```
+Deploy statrted at 11:10:04.025 | In seconds: 99.001415454 | In minutes: 1.65002359090000000000
+Deploy statrted at 11:12:37.848 | In seconds: 112.119870812 | In minutes: 1.86866451353333333333
+Deploy statrted at 11:15:25.723 | In seconds: 105.101864596 | In minutes: 1.75169774326666666666
+Deploy statrted at 11:18:03.897 | In seconds: 236.585444016 | In minutes: 3.94309073360000000000
+Deploy statrted at 11:22:54.649 | In seconds: 105.411658740 | In minutes: 1.75686097900000000000
+Deploy statrted at 11:25:34.488 | In seconds: 119.385858692 | In minutes: 1.98976431153333333333
+Deploy statrted at 11:28:28.184 | In seconds: 73.656030242 | In minutes: 1.22760050403333333333
+Deploy statrted at 11:30:38.268 | In seconds: 72.756755216 | In minutes: 1.21261258693333333333
+Deploy statrted at 11:32:47.065 | In seconds: 72.860607036 | In minutes: 1.21434345060000000000
+Deploy statrted at 11:34:57.656 | In seconds: 78.198989525 | In minutes: 1.30331649208333333333
+```

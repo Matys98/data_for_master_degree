@@ -1,20 +1,17 @@
 clc; clear all; close all;
+path_to_log_file='ps-bash-grafana-2022-08-03.csv'
+[ID, DATE, CPU, MEM_P, MEM_KiB] = read_ps_logs(path_to_log_file);
 
-P1Start=1; P1End=100; 
-C1= 2; C2= 12;
-step = 1;
+path_to_file='/tool/app/deployment/i/';
 
-data = '3 Sierpnia 2022';
-
-filename = 'readings.csv';
-readDataCSV = csvread(filename,P1Start,C1,[P1Start C1 P1End C2]);
-readTableCSV = readtable(filename);
-readTableCSV = readTableCSV(:,6);
-
-time = table2array(readTableCSV);
-time = string(time(P1Start:step:P1End));
-time = time.';
-xTime = P1Start:P1End;
+figure
+plot(ID, CPU);
+set(gca, 'XTick', ID(1:150:1120), 'XTickLabel', DATE);
+title('Zuzycie procesora(%)'); ylabel('CPU %'); xlabel("Test");
+hold on
+plot(ID, MEM_P);
+%set(gca, 'XTick', ID(1:150:1120), 'XTickLabel', DATE);
+%title('Pamiec RAM KiB'); ylabel('Zuzycie (KiB)'); xlabel("Test");
 
 %% Dane "ID; Time; CPU %; MEM %; MEM KiB"
 %% Oczyt danych CPU / MEM

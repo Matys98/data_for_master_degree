@@ -101,7 +101,7 @@ def generate_ps_log_file():
     avg_ram_p = [avg_MEM_Ps / 10.0 for avg_MEM_Ps in avg_MEM_P]
     avg_ram_kib = [avg_MEM_KiBs / 10.0 for avg_MEM_KiBs in avg_MEM_KiB]
 
-    f = open(directory_path + '/avg_ps_readings.csv', 'a', encoding='utf-8', errors='ignore')
+    f = open(directory_path + '/avg_ps_readings.csv', 'w', encoding='utf-8', errors='ignore')
     for line in range(len(avg_cpu)-1):
         f.write(str(avg_ID[line]) + "," + str(avg_DATE[line]) + "," + str(avg_cpu[line]) + "," + str(avg_ram_p[line]) + "," + str(avg_ram_kib[line]) + '\n')
     f.close()
@@ -192,11 +192,16 @@ def generate_net_log_file():
     avg_tbps = [avg_TBPSs / 10.0 for avg_TBPSs in avg_TBPS]
     avg_rbps = [avg_RBPSs / 10.0 for avg_RBPSs in avg_RBPS]
 
-    f = open(directory_path + '/avg_net_readings.csv', 'a', encoding='utf-8', errors='ignore')
+    f = open(directory_path + '/avg_net_readings.csv', 'w', encoding='utf-8', errors='ignore')
     for line in range(len(avg_tbps)-1):
         f.write(str(avg_ID[line]) + "," + str(avg_DATE[line]) + "," + str(avg_NET_INTERFACE[line]) + "," + str(avg_tbps[line]) + "," + str(avg_rbps[line]) + '\n')
     f.close()
 
+# --------------------------------
+# --------------------------------
+# ------------- TIME -------------
+# --------------------------------
+# --------------------------------
 
 def generate_latex_table_with_time():
     
@@ -226,14 +231,25 @@ def generate_time_chart_data():
         if "Deploy statrted at" in line:
             a_file_content.append(extract_time_chart_data(line))
 
+
     time_readings.close()
-    # f = open(directory_path + '/time_data.csv', 'a', encoding='utf-8', errors='ignore')
-    # for line in range(len(avg_tbps)-1):
-    #     f.write(str(a_file_content[line]) + "," + str(a_file_content[line]) + "," + str(a_file_content[line]) + "," + str(avg_tbps[line]) + "," + str(avg_rbps[line]) + '\n')
-    # f.close()
+
     return a_file_content
 
-# generate_ps_log_file()
-# generate_net_log_file()
+generate_ps_log_file()
+generate_net_log_file()
 
-print(generate_time_chart_data())
+a_file_content = generate_time_chart_data()
+# print(a_file_content)
+
+f = open(directory_path + '/time_data.csv', 'w', encoding='utf-8', errors='ignore')
+
+i = 0
+for line in range(len(a_file_content)):
+    i += 1
+    date = str(a_file_content[line][0])
+    seconds = str(a_file_content[line][1])
+    minutes =  str(a_file_content[line][2])
+    f.write(str(i) + "," + date.replace(" ", "") + "," + seconds.replace(" ", "") + "," + minutes.replace(" ", "") + '\n')
+    
+f.close()

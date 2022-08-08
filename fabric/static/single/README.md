@@ -1,5 +1,5 @@
 # READINGS 1-10 fabric static single
-\n
+
 ```
 Deploy statrted at 07:43:26.738 | In seconds: 163.096802381 | In minutes: 2.71828003968333333333
 Deploy statrted at 07:46:47.594 | In seconds: 160.067791229 | In minutes: 2.66779652048333333333

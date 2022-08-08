@@ -1,5 +1,5 @@
 # READINGS 1-10 ansible grafana single
-\n
+
 ```
 Deploy statrted at 10:13:00.234 | In seconds: 77.405548737 | In minutes: 1.29009247895000000000
 Deploy statrted at 10:14:59.217 | In seconds: 73.599594143 | In minutes: 1.22665990238333333333

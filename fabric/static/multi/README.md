@@ -1,5 +1,5 @@
 # READINGS 1-10 fabric static multi
-\n
+
 ```
 Deploy statrted at 13:36:57.296 | In seconds: 541.662766315 | In minutes: 9.02771277191666666666
 Deploy statrted at 13:47:18.434 | In seconds: 502.250217649 | In minutes: 8.37083696081666666666

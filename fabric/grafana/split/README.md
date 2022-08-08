@@ -1,5 +1,5 @@
 # READINGS 1-10 fabric grafana split
-\n
+
 ```
 Deploy statrted at 11:10:04.025 | In seconds: 99.001415454 | In minutes: 1.65002359090000000000
 Deploy statrted at 11:12:37.848 | In seconds: 112.119870812 | In minutes: 1.86866451353333333333

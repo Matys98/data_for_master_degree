@@ -1,5 +1,5 @@
 # READINGS 1-10 bash static single
-\n
+
 ```
 Deploy statrted at 22:03:53.426 | In seconds: 301.106619364 | In minutes: 5.01844365606666666666
 Deploy statrted at 22:09:35.604 | In seconds: 220.053635284 | In minutes: 3.66756058806666666666

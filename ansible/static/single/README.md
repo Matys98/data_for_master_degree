@@ -1,5 +1,5 @@
 # READINGS 1-10 ansible static single
-\n
+
 ```
 Deploy statrted at 08:24:37.337 | In seconds: 411.345748134 | In minutes: 6.85576246890000000000
 Deploy statrted at 08:32:10.554 | In seconds: 409.046291716 | In minutes: 6.81743819526666666666

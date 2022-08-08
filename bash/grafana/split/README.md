@@ -1,5 +1,5 @@
 # READINGS 1-10 bash grafana split
-\n
+
 ```
 Deploy statrted at 11:41:21.818 | In seconds: 69.181026216 | In minutes: 1.15301710360000000000
 Deploy statrted at 11:43:26.233 | In seconds: 75.311118733 | In minutes: 1.25518531221666666666

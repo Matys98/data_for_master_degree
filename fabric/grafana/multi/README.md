@@ -1,5 +1,5 @@
 # READINGS 1-10 fabric grafana multi
-\n
+
 ```
 Deploy statrted at 20:55:24.769 | In seconds: 261.409827738 | In minutes: 4.35683046230000000000
 Deploy statrted at 21:00:53.669 | In seconds: 247.723285127 | In minutes: 4.12872141878333333333

@@ -1,5 +1,5 @@
 # READINGS 1-10 bash static multi
-\n
+
 ```
 Deploy statrted at 19:51:16.012 | In seconds: 757.040432327 | In minutes: 12.61734053878333333333
 Deploy statrted at 20:05:13.317 | In seconds: 953.700102565 | In minutes: 15.89500170941666666666

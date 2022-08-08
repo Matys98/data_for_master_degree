@@ -1,5 +1,5 @@
 # READINGS 1-10 fabric grafana single
-\n
+
 ```
 Deploy statrted at 09:48:53.014 | In seconds: 67.627691682 | In minutes: 1.12712819470000000000
 Deploy statrted at 09:50:58.264 | In seconds: 63.154852524 | In minutes: 1.05258087540000000000

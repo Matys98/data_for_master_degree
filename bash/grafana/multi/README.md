@@ -1,5 +1,5 @@
 # READINGS 1-10 bash grafana multi
-\n
+
 ```
 Deploy statrted at 08:03:51.022 | In seconds: 206.158666494 | In minutes: 3.43597777490000000000
 Deploy statrted at 08:08:30.765 | In seconds: 193.574793140 | In minutes: 3.22624655233333333333

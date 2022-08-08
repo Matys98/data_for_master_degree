@@ -1,5 +1,5 @@
 # READINGS 1-10 ansible static multi
-\n
+
 ```
 Deploy statrted at 10:01:30.016 | In seconds: 1148.997600975 | In minutes: 19.14996001625000000000
 Deploy statrted at 10:22:10.874 | In seconds: 1090.327713678 | In minutes: 18.17212856130000000000

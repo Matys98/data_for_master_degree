@@ -1,5 +1,5 @@
 # READINGS 1-10 ansible grafana split
-\n
+
 ```
 Deploy statrted at 10:41:43.825 | In seconds: 91.018606595 | In minutes: 1.51697677658333333333
 Deploy statrted at 10:44:08.953 | In seconds: 91.990171514 | In minutes: 1.53316952523333333333

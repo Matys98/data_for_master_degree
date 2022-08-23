@@ -39,3 +39,10 @@ Repository includes all provisioning tools code and benchmarks prepared for them
 # example
 ./data_for_master_degree/bash/grafana/multi/0/
 ```
+
+
+## Matlab
+main file - figures.m
+
+## Python
+main file - main.py

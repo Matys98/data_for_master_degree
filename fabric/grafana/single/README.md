@@ -1,14 +1,14 @@
 # READINGS 1-10 fabric grafana single
 
 ```
-Deploy statrted at 09:48:53.014 | In seconds: 67.627691682 | In minutes: 1.12712819470000000000
-Deploy statrted at 09:50:58.264 | In seconds: 63.154852524 | In minutes: 1.05258087540000000000
-Deploy statrted at 09:53:03.288 | In seconds: 62.827945090 | In minutes: 1.04713241816666666666
-Deploy statrted at 09:55:06.267 | In seconds: 62.911835679 | In minutes: 1.04853059465000000000
-Deploy statrted at 09:57:10.585 | In seconds: 63.410808168 | In minutes: 1.05684680280000000000
-Deploy statrted at 09:59:15.002 | In seconds: 63.306457913 | In minutes: 1.05510763188333333333
-Deploy statrted at 10:01:20.792 | In seconds: 62.542151021 | In minutes: 1.04236918368333333333
-Deploy statrted at 10:03:23.642 | In seconds: 63.770164053 | In minutes: 1.06283606755000000000
-Deploy statrted at 10:05:28.601 | In seconds: 63.301181937 | In minutes: 1.05501969895000000000
-Deploy statrted at 10:07:34.009 | In seconds: 64.351702478 | In minutes: 1.07252837463333333333
+Deploy statrted at 19:31:53.782 | In seconds: 52.904434779 | In minutes: .88174057965000000000
+Deploy statrted at 19:33:23.379 | In seconds: 53.461242270 | In minutes: .89102070450000000000
+Deploy statrted at 19:34:56.309 | In seconds: 53.437009305 | In minutes: .89061682175000000000
+Deploy statrted at 19:36:28.083 | In seconds: 52.837429190 | In minutes: .88062381983333333333
+Deploy statrted at 19:37:59.541 | In seconds: 53.244564102 | In minutes: .88740940170000000000
+Deploy statrted at 19:39:29.429 | In seconds: 53.078073214 | In minutes: .88463455356666666666
+Deploy statrted at 19:41:01.076 | In seconds: 53.329836991 | In minutes: .88883061651666666666
+Deploy statrted at 19:42:31.060 | In seconds: 57.769639083 | In minutes: .96282731805000000000
+Deploy statrted at 19:44:09.140 | In seconds: 57.009099524 | In minutes: .95015165873333333333
+Deploy statrted at 19:45:46.997 | In seconds: 58.310823512 | In minutes: .97184705853333333333
 ```

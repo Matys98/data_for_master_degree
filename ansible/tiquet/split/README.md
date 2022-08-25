@@ -1,14 +1,14 @@
 # READINGS 1-10 ansible tiquet split
 
 ```
-Deploy statrted at 09:35:25.602 | In seconds: 480.761604261 | In minutes: 8.01269340435000000000
-Deploy statrted at 09:44:37.981 | In seconds: 429.833747887 | In minutes: 7.16389579811666666666
-Deploy statrted at 09:52:58.729 | In seconds: 423.871026477 | In minutes: 7.06451710795000000000
-Deploy statrted at 10:01:13.379 | In seconds: 430.583018562 | In minutes: 7.17638364270000000000
-Deploy statrted at 10:09:34.727 | In seconds: 431.805596519 | In minutes: 7.19675994198333333333
-Deploy statrted at 10:17:57.504 | In seconds: 423.442664671 | In minutes: 7.05737774451666666666
-Deploy statrted at 10:26:12.422 | In seconds: 434.921053375 | In minutes: 7.24868422291666666666
-Deploy statrted at 10:34:39.946 | In seconds: 451.465972648 | In minutes: 7.52443287746666666666
-Deploy statrted at 10:43:22.438 | In seconds: 438.898098724 | In minutes: 7.31496831206666666666
-Deploy statrted at 10:51:52.187 | In seconds: 442.199732626 | In minutes: 7.36999554376666666666
+Deploy statrted at 15:07:55.909 | In seconds: 491.234667835 | In minutes: 8.18724446391666666666
+Deploy statrted at 15:17:19.191 | In seconds: 444.819495214 | In minutes: 7.41365825356666666666
+Deploy statrted at 15:25:54.069 | In seconds: 438.063578134 | In minutes: 7.30105963556666666666
+Deploy statrted at 15:34:20.583 | In seconds: 448.071259137 | In minutes: 7.46785431895000000000
+Deploy statrted at 15:43:00.930 | In seconds: 464.764797868 | In minutes: 7.74607996446666666666
+Deploy statrted at 15:51:55.690 | In seconds: 452.936045765 | In minutes: 7.54893409608333333333
+Deploy statrted at 16:00:37.852 | In seconds: 484.210945310 | In minutes: 8.07018242183333333333
+Deploy statrted at 16:09:51.446 | In seconds: 451.385718576 | In minutes: 7.52309530960000000000
+Deploy statrted at 16:18:32.604 | In seconds: 448.280035606 | In minutes: 7.47133392676666666666
+Deploy statrted at 16:27:10.958 | In seconds: 477.893433191 | In minutes: 7.96489055318333333333
 ```

@@ -63,7 +63,7 @@ Fabric - Static - Multi
 ![plot](./images/fabric/static/multi/trbps.png)
 
 ### NET TBPS and RBPS split
-![plot](./images/fabric/static/multi/compare_rbps_tbps.png)
+![plot](./images/fabric/static/multi/copmpare_rbps_tbps.png)
 
 ### TIME in seconds
 ![plot](./images/fabric/static/multi/time_sec.png)

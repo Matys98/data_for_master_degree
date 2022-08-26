@@ -29,5 +29,5 @@ function generate_net_figures(ID, DATE, NET_INTERFACE, TBPS, RBPS, tool, app, de
     set(gca, 'XTick', ID(1:100:max_ID), 'XTickLabel', DATE);
     grid on;
     ylabel('b/s'); xlabel("Czas");
-    saveas(gcf, file_path + "\cpmpare_rbps_tbps", 'png')
+    saveas(gcf, file_path + "\copmpare_rbps_tbps", 'png')
 end

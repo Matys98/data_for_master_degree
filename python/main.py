@@ -203,11 +203,8 @@ def generate_net_log_file():
 # --------------------------------
 # --------------------------------
 
-def generate_latex_table_with_time():
-    
-
-
-    return 0
+# def generate_latex_table_with_time():
+#     return 0
 
 def extract_time_chart_data(line):
     if "Build Completed" in line:
@@ -235,6 +232,9 @@ def generate_time_chart_data():
     time_readings.close()
 
     return a_file_content
+
+
+
 
 generate_ps_log_file()
 generate_net_log_file()

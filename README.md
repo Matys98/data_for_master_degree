@@ -46,3 +46,27 @@ main file - figures.m
 
 ## Python
 main file - main.py
+
+## Readings (Charts example)
+Fabric - Static - Multi
+ 
+### CPU Usage
+![plot](./images/fabric/static/multi/cpu_usage.png)
+
+### RAM Usage in %
+![plot](./images/fabric/static/multi/ram_usage_p.png)
+
+### RAM Usage in Kib
+![plot](./images/fabric/static/multi/ram_usage_kib.png)
+
+### NET TBPS and RBPS one
+![plot](./images/fabric/static/multi/trbps.png)
+
+### NET TBPS and RBPS split
+![plot](./images/fabric/static/multi/compare_rbps_tbps.png)
+
+### TIME in seconds
+![plot](./images/fabric/static/multi/time_sec.png)
+
+### TIME in minutes
+![plot](./images/fabric/static/multi/time_min.png)

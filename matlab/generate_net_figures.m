@@ -18,6 +18,26 @@ function generate_net_figures(app, deployment)
     save_file_path = "C:\Users\Michal\Desktop\Projekty\data_for_master_degree\images" + "\" + string(app)+ "\" + string(deployment); 
     s = get(0, 'ScreenSize');
     
+    [a_x, a_y] = size(a_ID);
+    [b_x, b_y] = size(b_ID);
+    [f_x, f_y] = size(f_ID);
+    [m, i] = max([a_y, b_y, f_y]);
+    
+    if i == 1
+        ID = a_ID;
+        [x, max_ID] = max(a_ID);
+        DATE = a_DATE;
+    elseif i == 2
+        ID = b_ID;
+        [x, max_ID] = max(b_ID);
+        DATE = a_DATE;
+    else
+        ID = f_ID;
+        [x, max_ID] = max(f_ID);
+        DATE = f_DATE;
+    end
+    step = round(max_ID / 10);
+    
     %% One chart
 %     figure('Position', [0 0 s(3) s(4)])
 %     hold on
@@ -42,7 +62,7 @@ function generate_net_figures(app, deployment)
     subplot(2,1,1); plot(b_ID, b_TBPS);
     hold on
     subplot(2,1,1); plot(f_ID, f_TBPS);
-    set(gca, 'XTick', a_ID(1:100:max_ID), 'XTickLabel', a_DATE);
+    set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE);
     title('Iloœæ wys³anych bitów na sekundê'); 
     grid on;
     legend("Ansible", "Bash", "Fabric");
@@ -54,7 +74,7 @@ function generate_net_figures(app, deployment)
     hold on
     subplot(2,1,2); plot(f_ID, f_RBPS);
     title('Iloœæ odebranych bitów na sekundê');
-    set(gca, 'XTick', a_ID(1:100:max_ID), 'XTickLabel', a_DATE);
+    set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE);
     grid on;
     ylabel('b/s'); xlabel("Czas");
     legend("Ansible", "Bash", "Fabric");

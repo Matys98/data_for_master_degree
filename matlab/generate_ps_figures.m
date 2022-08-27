@@ -15,9 +15,27 @@ function generate_ps_figures(app, deployment)
     [f_ID, f_DATE, f_CPU, f_MEM_P, f_MEM_KiB] = read_ps_logs(string(readings_path)+"\"+ps_file);
     
     save_file_path = "C:\Users\Michal\Desktop\Projekty\data_for_master_degree\images" + "\"  + string(app)+ "\" + string(deployment); %+ "\" + string(tool)+ "\" 
-    ID = max([size(a_ID) size(b_ID) size(f_ID)]);
-    max_ID = ID;
     s = get(0, 'ScreenSize');
+    
+    [a_x, a_y] = size(a_ID);
+    [b_x, b_y] = size(b_ID);
+    [f_x, f_y] = size(f_ID);
+    [m, i] = max([a_y, b_y, f_y]);
+    
+    if i == 1
+        ID = a_ID;
+        [x, max_ID] = max(a_ID);
+        DATE = a_DATE;
+    elseif i == 2
+        ID = b_ID;
+        [x, max_ID] = max(b_ID);
+        DATE = a_DATE;
+    else
+        ID = f_ID;
+        [x, max_ID] = max(f_ID);
+        DATE = f_DATE;
+    end
+    step = round(max_ID / 10);
     
     %% CPU
     figure('Position', [0 0 s(3) s(4)])
@@ -27,7 +45,7 @@ function generate_ps_figures(app, deployment)
     hold on
     plot(f_ID, f_CPU);
     hold off
-    set(gca, 'XTick', a_ID(1:500:max_ID), 'XTickLabel', a_DATE);
+    set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE);
     title('Zu¿ycie procesora (%)'); ylabel('CPU (%)'); xlabel("Czas");
     grid on;
     legend("Ansible", "Bash", "Fabric");
@@ -43,7 +61,7 @@ function generate_ps_figures(app, deployment)
     hold off;
     grid on;
     legend("Ansible", "Bash", "Fabric");
-    set(gca, 'XTick', a_ID(1:500:max_ID), 'XTickLabel', a_DATE);
+    set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE);
     title('Zu¿ycie pamiêci RAM (%)'); ylabel('RAM (%)'); xlabel("Czas");
     saveas(gcf, save_file_path + "\ram_usage_p", 'png')
     
@@ -56,7 +74,7 @@ function generate_ps_figures(app, deployment)
     plot(f_ID, f_MEM_KiB);
     hold off;
     legend("Ansible", "Bash", "Fabric");
-    set(gca, 'XTick', a_ID(1:500:max_ID), 'XTickLabel', a_DATE);
+    set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE);
     title('Zu¿ycie pamiêci RAM (KiB)'); ylabel('RAM (KiB)'); xlabel("Czas");
     grid on;
     saveas(gcf, save_file_path + "\ram_usage_kib", 'png')

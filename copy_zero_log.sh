@@ -7,8 +7,10 @@ for tool in ansible bash fabric; do
             cp ./$tool/$app/$deploy/0/net-* ./$tool/$app/$deploy/zero_net_readings.csv
             sed -i '1d' ./$tool/$app/$deploy/zero_ps_readings.csv
             sed -i '1d' ./$tool/$app/$deploy/zero_net_readings.csv
-            sed -i 's/;/,/' ./$tool/$app/$deploy/zero_ps_readings.csv
-            sed -i 's/;/,/' ./$tool/$app/$deploy/zero_net_readings.csv
+            for i in {1..5}; do
+                sed -i 's/;/,/' ./$tool/$app/$deploy/zero_ps_readings.csv
+                sed -i 's/;/,/' ./$tool/$app/$deploy/zero_net_readings.csv
+            done
         done
     done
 done
@@ -20,7 +22,9 @@ app="static"
         cp ./$tool/$app/$deploy/0/net-* ./$tool/$app/$deploy/zero_net_readings.csv
         sed -i '1d' ./$tool/$app/$deploy/zero_ps_readings.csv
         sed -i '1d' ./$tool/$app/$deploy/zero_net_readings.csv
-        sed -i 's/;/,/' ./$tool/$app/$deploy/zero_ps_readings.csv
-        sed -i 's/;/,/' ./$tool/$app/$deploy/zero_net_readings.csv
+        for i in {1..5}; do
+            sed -i 's/;/,/' ./$tool/$app/$deploy/zero_ps_readings.csv
+            sed -i 's/;/,/' ./$tool/$app/$deploy/zero_net_readings.csv
+        done
     done
 done

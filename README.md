@@ -51,22 +51,22 @@ main file - main.py
 Fabric - Static - Multi
  
 ### CPU Usage
-![plot](./images/fabric/static/multi/cpu_usage.png)
+![plot](./images/static/multi/cpu_usage.png)
 
 ### RAM Usage in %
-![plot](./images/fabric/static/multi/ram_usage_p.png)
+![plot](./images/static/multi/ram_usage_p.png)
 
 ### RAM Usage in Kib
-![plot](./images/fabric/static/multi/ram_usage_kib.png)
+![plot](./images/static/multi/ram_usage_kib.png)
 
 ### NET TBPS and RBPS one
-![plot](./images/fabric/static/multi/trbps.png)
+![plot](./images/static/multi/trbps.png)
 
 ### NET TBPS and RBPS split
-![plot](./images/fabric/static/multi/copmpare_rbps_tbps.png)
+![plot](./images/static/multi/copmpare_rbps_tbps.png)
 
 ### TIME in seconds
-![plot](./images/fabric/static/multi/time_sec.png)
+![plot](./images/static/multi/time_sec.png)
 
 ### TIME in minutes
-![plot](./images/fabric/static/multi/time_min.png)
+![plot](./images/static/multi/time_min.png)

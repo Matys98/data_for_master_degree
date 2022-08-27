@@ -20,10 +20,10 @@ function generate_time_figures(app, deployment)
     %% Time in seconds
     figure('Position', [0 0 s(3) s(4)])
     bar(a_ID, [a_SECONDS', b_SECONDS', f_SECONDS']); %[a_ID; b_ID; f_ID], 
-    title('Czas wdra¿ania aplikacji w sekundach'); ylabel('Czas (s)'); xlabel("Numer próby");
-    text((1:length(a_SECONDS)) - 0.15,a_SECONDS,num2str(round(a_SECONDS,2)'),'vert','bottom','horiz','right');
+    title('Czas wdraï¿½ania aplikacji w sekundach'); ylabel('Czas (s)'); xlabel("Numer prï¿½by");
+    text(1:length(a_SECONDS),a_SECONDS,num2str(round(a_SECONDS,2)'),'vert','bottom','horiz','right');
     text(1:length(b_SECONDS),b_SECONDS,num2str(round(b_SECONDS,2)'),'vert','bottom','horiz','center');
-    text((1:length(f_SECONDS)) + 0.15,f_SECONDS,num2str(round(f_SECONDS,2)'),'vert','bottom','horiz','left');
+    text(1:length(f_SECONDS),f_SECONDS,num2str(round(f_SECONDS,2)'),'vert','bottom','horiz','left');
     grid on;
     box off
     legend("Ansible", "Bash", "Fabric");
@@ -32,10 +32,10 @@ function generate_time_figures(app, deployment)
     %% Time in minutes
     figure('Position', [0 0 s(3) s(4)])
     bar(a_ID, [a_MINUTES', b_MINUTES', f_MINUTES']);
-    title('Czas wdra¿ania aplikacji w minutach'); ylabel('Czas (min)'); xlabel("Numer próby");
-    text((1:length(a_MINUTES)) - 0.15, a_MINUTES, num2str(round(a_MINUTES,2)') ,'vert', 'bottom', 'horiz','right');
+    title('Czas wdraï¿½ania aplikacji w minutach'); ylabel('Czas (min)'); xlabel("Numer prï¿½by");
+    text((1:length(a_MINUTES)) - 0.1, a_MINUTES, num2str(round(a_MINUTES,2)') ,'vert', 'bottom', 'horiz','right');
     text(1:length(b_MINUTES),b_MINUTES,num2str(round(b_MINUTES,2)'),'vert','bottom','horiz','center'); 
-    text((1:length(f_MINUTES)) + 0.15,f_MINUTES,num2str(round(f_MINUTES,2)'),'vert','bottom','horiz','left'); 
+    text(1:length(f_MINUTES)) - 0.1,f_MINUTES,num2str(round(f_MINUTES,2)'),'vert','bottom','horiz','left'); 
     grid on;
     box off
     legend("Ansible", "Bash", "Fabric");

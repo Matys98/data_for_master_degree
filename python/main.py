@@ -234,8 +234,6 @@ def generate_time_chart_data():
     return a_file_content
 
 
-
-
 generate_ps_log_file()
 generate_net_log_file()
 

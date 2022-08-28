@@ -1,4 +1,17 @@
-function [app, deployment] = chose_tool_app_deployment()
+function [tool, app, deployment] = chose_tool_app_deployment(mode)
+  if mode == 0
+      tool = "None";
+  else
+      tool_prompt= 'Wybierz aplikacje: \n 1. Ansible \n 2. Bash \n 3. Fabric \n';
+      tool_id=input(tool_prompt);
+      if tool_id == 1
+          tool = "ansible";
+      elseif tool_id == 2
+          tool = "bash";
+      else
+          tool = "fabric";
+  end
+  
   app_prompt= 'Wybierz aplikacje: \n 1. Static \n 2. Grafana \n 3. Tiquet \n';
   app_id=input(app_prompt);
   

@@ -1,6 +1,6 @@
 clc; clear all; close all;
 
-[app, deployment] = chose_tool_app_deployment();
+[tool, app, deployment] = chose_tool_app_deployment(0);
 
 curent_dir = pwd;
 curent_dir = erase(curent_dir,"matlab");

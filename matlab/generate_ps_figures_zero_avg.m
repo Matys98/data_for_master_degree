@@ -23,7 +23,7 @@ function generate_ps_figures_zero_avg(tool, app, deployment)
         [x, max_ID] = max(a_ID);
         DATE = a_DATE;
     else
-        ID = f_ID;
+        ID = z_ID;
         [x, max_ID] = max(z_ID);
         DATE = z_DATE;
     end
@@ -32,22 +32,21 @@ function generate_ps_figures_zero_avg(tool, app, deployment)
     %% Subplot
     figure('Position', [0 0 s(3) s(4)])
     
-    subplot(2,1,1); plot(a_ID, a_CPU);
-    hold on
     subplot(2,1,1); plot(z_ID, z_CPU);
+    hold on
+    subplot(2,1,1); plot(a_ID, a_CPU);
     hold on
     set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE); 
     grid on;
-    legend("Œrednia", "Próba zerowa");
+    legend("Próba zerowa", "Œrednia");
     title('Porównanie zu¿ycie procesora (próba zerowa z 10 pomiarami)'); ylabel('CPU (%)'); xlabel("Czas");
     
-    subplot(2,1,2); plot(a_ID, a_MEM_KiB);
-    hold on
     subplot(2,1,2); plot(z_ID, z_MEM_KiB);
+    hold on
+    subplot(2,1,2); plot(a_ID, a_MEM_KiB);
     set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE);
     grid on;
     legend("Œrednia", "Próba zerowa");
-    title('Porównanie zu¿ycie pamieci RAM (próba zerowa z 10 pomiarami)'); ylabel('CPU (%)'); xlabel("Czas");
-    
+    title('Porównanie zu¿ycie pamieci RAM (próba zerowa z 10 pomiarami)'); ylabel('RAM (KiB)'); xlabel("Czas");
     saveas(gcf, save_file_path + "\" + string(tool) + "_zero_avg_cpu_ram", 'png')
 end

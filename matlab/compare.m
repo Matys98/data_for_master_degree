@@ -1,8 +1,6 @@
 clc; clear all; close all;
 
-tool = "ansible"
-
-[app, deployment] = chose_tool_app_deployment();
+% [tool, app, deployment] = chose_tool_app_deployment(1);
 
 curent_dir = pwd;
 curent_dir = erase(curent_dir,"matlab");
@@ -11,5 +9,15 @@ curent_dir = erase(curent_dir,"matlab");
 
 %% Generating figures 
 
-generate_ps_figures_zero_avg(tool, app, deployment);
-% generate_net_figures(app, deployment);
+for tool = ["ansible", "bash", "fabric"]
+    for app = ["static", "grafana", "tiquet"]
+        for deployment = ["single", "split", "multi"]
+            if app == "static" && deployment == "split"
+                disp("OK")
+            else
+                generate_ps_figures_zero_avg(tool, app, deployment);
+                generate_net_figures_zero_avg(tool, app, deployment);
+            end
+        end
+    end 
+end

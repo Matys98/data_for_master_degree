@@ -74,9 +74,9 @@ function generate_net_figures(app, deployment)
     hold on
     subplot(2,1,2); plot(f_ID, f_RBPS);
     title('Iloœæ odebranych bitów na sekundê');
+    ylabel('b/s'); xlabel("Czas");
     set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE);
     grid on;
-    ylabel('b/s'); xlabel("Czas");
     legend("Ansible", "Bash", "Fabric");
     saveas(gcf, save_file_path + "\copmpare_rbps_tbps", 'png')
 end

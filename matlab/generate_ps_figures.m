@@ -47,7 +47,7 @@ function generate_ps_figures(app, deployment)
     plot(f_ID, f_CPU);
     hold off
     grid on;
-    set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE);
+    set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE(1:step:max_ID));
     title('Zu¿ycie procesora (%)'); ylabel('CPU (%)'); xlabel("Czas");
     legend("Ansible", "Bash", "Fabric");
     saveas(gcf, save_file_path + "\cpu_usage", 'png')
@@ -74,7 +74,7 @@ function generate_ps_figures(app, deployment)
     hold on;
     plot(f_ID, f_MEM_KiB);
     hold off;
-    set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE);
+    set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE(1:step:max_ID));
     legend("Ansible", "Bash", "Fabric");
     title('Zu¿ycie pamiêci RAM (KiB)'); ylabel('RAM (KiB)'); xlabel("Czas");
     grid on;
@@ -88,7 +88,7 @@ function generate_ps_figures(app, deployment)
     subplot(2,1,1); plot(b_ID, b_CPU);
     hold on
     subplot(2,1,1); plot(f_ID, f_CPU);
-    set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE); 
+    set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE(1:step:max_ID)); 
     grid on;
     title('Zu¿ycie procesora (%)'); ylabel('CPU (%)'); xlabel("Czas");
     legend("Ansible", "Bash", "Fabric");
@@ -98,7 +98,7 @@ function generate_ps_figures(app, deployment)
     subplot(2,1,2); plot(b_ID, b_MEM_P);
     hold on
     subplot(2,1,2); plot(f_ID, f_MEM_P);
-    set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE);
+    set(gca, 'XTick', ID(1:step:max_ID), 'XTickLabel', DATE(1:step:max_ID));
     grid on;
     legend("Ansible", "Bash", "Fabric");
     title('Zu¿ycie pamiêci RAM (%)'); ylabel('RAM (%)'); xlabel("Czas");

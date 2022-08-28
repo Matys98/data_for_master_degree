@@ -61,5 +61,5 @@ function generate_ps_figures_zero_avg(tool, app, deployment)
     grid on;
     legend("Próba zerowa", "Losowo wybrana próba", "Œrednia");
     title('Porównanie zu¿ycie pamieci RAM (próba zerowa z 10 pomiarami)'); ylabel('RAM (KiB)'); xlabel("Czas");
-    saveas(gcf, save_file_path + "\" + string(tool) + "_zero_avg_cpu_ram", 'png')
+    saveas(gcf, save_file_path + "\zero_rand_avg\" + string(tool) + "_zero_avg_cpu_ram", 'png')
 end

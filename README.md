@@ -48,8 +48,10 @@ main file - figures.m
 main file - main.py
 
 ## Readings (Charts example)
-Fabric - Static - Multi
+Static - Multi
  
+#### Usage
+
 ### CPU Usage
 ![plot](./images/static/multi/cpu_usage.png)
 
@@ -59,11 +61,15 @@ Fabric - Static - Multi
 ### RAM Usage in Kib
 ![plot](./images/static/multi/ram_usage_kib.png)
 
-### NET TBPS and RBPS one
-![plot](./images/static/multi/trbps.png)
+### CPU and RAM %
+![plot](./images/static/multi/cpu_ram.png)
+
+#### NET
 
 ### NET TBPS and RBPS split
 ![plot](./images/static/multi/copmpare_rbps_tbps.png)
+
+#### TIME
 
 ### TIME in seconds
 ![plot](./images/static/multi/time_sec.png)
@@ -84,49 +90,41 @@ Fabric - Static - Multi
 
 ## All of readings
 ### Static single
-![plot](./images/static/single/cpu_usage.png)
-![plot](./images/static/single/ram_usage_kib.png)
+![plot](./images/static/single/cpu_ram.png)
 ![plot](./images/static/single/copmpare_rbps_tbps.png)
 ![plot](./images/static/single/time_sec.png)
 
 ### Static multi
-![plot](./images/static/multi/cpu_usage.png)
-![plot](./images/static/multi/ram_usage_kib.png)
+![plot](./images/static/multi/cpu_ram.png)
 ![plot](./images/static/multi/copmpare_rbps_tbps.png)
 ![plot](./images/static/multi/time_sec.png)
 
 ### Grafana single
-![plot](./images/grafana/single/cpu_usage.png)
-![plot](./images/grafana/single/ram_usage_kib.png)
+![plot](./images/grafana/single/cpu_ram.png)
 ![plot](./images/grafana/single/copmpare_rbps_tbps.png)
 ![plot](./images/grafana/single/time_sec.png)
 
 ### Grafana split
-![plot](./images/grafana/split/cpu_usage.png)
-![plot](./images/grafana/split/ram_usage_kib.png)
+![plot](./images/grafana/split/cpu_ram.png)
 ![plot](./images/grafana/split/copmpare_rbps_tbps.png)
 ![plot](./images/grafana/split/time_sec.png)
 
 ### Grafana multi
-![plot](./images/grafana/multi/cpu_usage.png)
-![plot](./images/grafana/multi/ram_usage_kib.png)
+![plot](./images/grafana/multi/cpu_ram.png)
 ![plot](./images/grafana/multi/copmpare_rbps_tbps.png)
 ![plot](./images/grafana/multi/time_sec.png)
 
 ### Tiquet single
-![plot](./images/tiquet/single/cpu_usage.png)
-![plot](./images/tiquet/single/ram_usage_kib.png)
+![plot](./images/tiquet/single/cpu_ram.png)
 ![plot](./images/tiquet/single/copmpare_rbps_tbps.png)
 ![plot](./images/tiquet/single/time_sec.png)
 
 ### Tiquet split
-![plot](./images/tiquet/split/cpu_usage.png)
-![plot](./images/tiquet/split/ram_usage_kib.png)
+![plot](./images/tiquet/split/cpu_ram.png)
 ![plot](./images/tiquet/split/copmpare_rbps_tbps.png)
 ![plot](./images/tiquet/split/time_sec.png)
 
 ### Tiquet multi
-![plot](./images/tiquet/multi/cpu_usage.png)
-![plot](./images/tiquet/multi/ram_usage_kib.png)
+![plot](./images/tiquet/multi/cpu_ram.png)
 ![plot](./images/tiquet/multi/copmpare_rbps_tbps.png)
 ![plot](./images/tiquet/multi/time_sec.png)

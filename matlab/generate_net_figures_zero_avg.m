@@ -64,5 +64,5 @@ function generate_net_figures_zero_avg(tool, app, deployment)
     title('Iloœæ odebranych bitów na sekundê');
     ylabel('b/s'); xlabel("Czas");
     
-    saveas(gcf, save_file_path + "\" + string(tool) + "_zero_avg_net", 'png')
+    saveas(gcf, save_file_path + "\zero_rand_avg\" + string(tool) + "_zero_avg_net", 'png')
 end

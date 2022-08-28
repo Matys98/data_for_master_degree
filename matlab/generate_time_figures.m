@@ -1,5 +1,4 @@
 function generate_time_figures(app, deployment)
-    time_file = "avg_ps_readings.csv";
     folder_path = "C:\Users\Michal\Desktop\Projekty\data_for_master_degree\";
 
     % Ansible
@@ -30,14 +29,14 @@ function generate_time_figures(app, deployment)
     saveas(gcf, save_file_path + "\time_sec", 'png')
     
     %% Time in minutes
-    figure('Position', [0 0 s(3) s(4)])
-    bar(a_ID, [a_MINUTES', b_MINUTES', f_MINUTES']);
-    title('Czas wdra¿ania aplikacji w minutach'); ylabel('Czas (min)'); xlabel("Numer próby");
-    text((1:length(a_MINUTES)) - 0.15, a_MINUTES, num2str(round(a_MINUTES,2)') ,'vert', 'bottom', 'horiz','right');
-    text(1:length(b_MINUTES),b_MINUTES,num2str(round(b_MINUTES,2)'),'vert','bottom','horiz','center'); 
-    text((1:length(f_MINUTES)) + 0.15,f_MINUTES,num2str(round(f_MINUTES,2)'),'vert','bottom','horiz','left'); 
-    grid on;
-    box off
-    legend("Ansible", "Bash", "Fabric");
-    saveas(gcf, save_file_path + "\time_min", 'png')
+%     figure('Position', [0 0 s(3) s(4)])
+%     bar(a_ID, [a_MINUTES', b_MINUTES', f_MINUTES']);
+%     title('Czas wdra¿ania aplikacji w minutach'); ylabel('Czas (min)'); xlabel("Numer próby");
+%     text((1:length(a_MINUTES)) - 0.15, a_MINUTES, num2str(round(a_MINUTES,2)') ,'vert', 'bottom', 'horiz','right');
+%     text(1:length(b_MINUTES),b_MINUTES,num2str(round(b_MINUTES,2)'),'vert','bottom','horiz','center'); 
+%     text((1:length(f_MINUTES)) + 0.15,f_MINUTES,num2str(round(f_MINUTES,2)'),'vert','bottom','horiz','left'); 
+%     grid on;
+%     box off
+%     legend("Ansible", "Bash", "Fabric");
+%     saveas(gcf, save_file_path + "\time_min", 'png')
 end

@@ -21,3 +21,4 @@ for tool = ["ansible", "bash", "fabric"]
         end
     end 
 end
+close all;

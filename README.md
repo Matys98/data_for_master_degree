@@ -82,9 +82,11 @@ Static - Multi
 #### Ansible
 ![plot](./images/static/multi/zero_rand_avg/ansible_zero_avg_cpu_ram.png)
 ![plot](./images/static/multi/zero_rand_avg/ansible_zero_avg_net.png)
+
 #### Bash
 ![plot](./images/static/multi/zero_rand_avg/bash_zero_avg_cpu_ram.png)
 ![plot](./images/static/multi/zero_rand_avg/bash_zero_avg_net.png)
+
 #### Fabric
 ![plot](./images/static/multi/zero_rand_avg/fabric_zero_avg_cpu_ram.png)
 ![plot](./images/static/multi/zero_rand_avg/fabric_zero_avg_net.png)
@@ -104,6 +106,12 @@ Static - Multi
 ![plot](./images/static/single/cpu_ram.png)
 ![plot](./images/static/single/copmpare_rbps_tbps.png)
 ![plot](./images/static/single/time_sec.png)
+![plot](./images/static/single/zero_rand_avg/ansible_zero_avg_cpu_ram.png)
+![plot](./images/static/single/zero_rand_avg/ansible_zero_avg_net.png)
+![plot](./images/static/single/zero_rand_avg/bash_zero_avg_cpu_ram.png)
+![plot](./images/static/single/zero_rand_avg/bash_zero_avg_net.png)
+![plot](./images/static/single/zero_rand_avg/fabric_zero_avg_cpu_ram.png)
+![plot](./images/static/single/zero_rand_avg/fabric_zero_avg_net.png)
 
 ### Static multi
 ![plot](./images/static/multi/cpu_ram.png)
@@ -114,6 +122,12 @@ Static - Multi
 ![plot](./images/grafana/single/cpu_ram.png)
 ![plot](./images/grafana/single/copmpare_rbps_tbps.png)
 ![plot](./images/grafana/single/time_sec.png)
+![plot](./images/grafana/single/zero_rand_avg/ansible_zero_avg_cpu_ram.png)
+![plot](./images/grafana/single/zero_rand_avg/ansible_zero_avg_net.png)
+![plot](./images/grafana/single/zero_rand_avg/bash_zero_avg_cpu_ram.png)
+![plot](./images/grafana/single/zero_rand_avg/bash_zero_avg_net.png)
+![plot](./images/grafana/single/zero_rand_avg/fabric_zero_avg_cpu_ram.png)
+![plot](./images/grafana/single/zero_rand_avg/fabric_zero_avg_net.png)
 
 ### Grafana split
 ![plot](./images/grafana/split/cpu_ram.png)
@@ -129,6 +143,12 @@ Static - Multi
 ![plot](./images/tiquet/single/cpu_ram.png)
 ![plot](./images/tiquet/single/copmpare_rbps_tbps.png)
 ![plot](./images/tiquet/single/time_sec.png)
+![plot](./images/tiquet/single/zero_rand_avg/ansible_zero_avg_cpu_ram.png)
+![plot](./images/tiquet/single/zero_rand_avg/ansible_zero_avg_net.png)
+![plot](./images/tiquet/single/zero_rand_avg/bash_zero_avg_cpu_ram.png)
+![plot](./images/tiquet/single/zero_rand_avg/bash_zero_avg_net.png)
+![plot](./images/tiquet/single/zero_rand_avg/fabric_zero_avg_cpu_ram.png)
+![plot](./images/tiquet/single/zero_rand_avg/fabric_zero_avg_net.png)
 
 ### Tiquet split
 ![plot](./images/tiquet/split/cpu_ram.png)

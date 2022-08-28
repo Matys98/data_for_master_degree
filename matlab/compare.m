@@ -12,6 +12,7 @@ curent_dir = erase(curent_dir,"matlab");
 for tool = ["ansible", "bash", "fabric"]
     for app = ["static", "grafana", "tiquet"]
         for deployment = ["single", "split", "multi"]
+            disp(string(tool)+ " " + string(app) + " " + string(deployment));
             if app == "static" && deployment == "split"
                 disp("OK")
             else

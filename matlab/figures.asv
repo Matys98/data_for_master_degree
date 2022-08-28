@@ -14,10 +14,9 @@ for app = ["static", "grafana", "tiquet"]
         if app == "static" && deployment == "split"
             disp("OK")
         else
-            generate_ps_figures(app, deployment);
-            generate_net_figures(app, deployment);
+        generate_ps_figures(app, deployment);
+        generate_net_figures(app, deployment);
             generate_time_figures(app, deployment);
+            end
         end
-    end
 end        
-close all;

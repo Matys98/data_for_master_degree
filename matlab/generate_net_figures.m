@@ -1,5 +1,6 @@
 function generate_net_figures(app, deployment)
-    net_file = "avg_net_readings.csv";
+%     net_file = "avg_net_readings.csv";
+    net_file = "zero_net_readings.csv";
     folder_path = "C:\Users\Michal\Desktop\Projekty\data_for_master_degree\";
     
      % Ansible

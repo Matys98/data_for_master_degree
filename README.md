@@ -50,33 +50,44 @@ main file - main.py
 ## Readings (Charts example)
 Static - Multi
  
-#### Usage
+### Usage
 
-### CPU Usage
+#### CPU Usage
 ![plot](./images/static/multi/cpu_usage.png)
 
-### RAM Usage in %
+#### RAM Usage in %
 ![plot](./images/static/multi/ram_usage_p.png)
 
-### RAM Usage in Kib
+#### RAM Usage in Kib
 ![plot](./images/static/multi/ram_usage_kib.png)
 
-### CPU and RAM %
+#### CPU and RAM %
 ![plot](./images/static/multi/cpu_ram.png)
 
-#### NET
+### NET
 
-### NET TBPS and RBPS split
+#### NET TBPS and RBPS split
 ![plot](./images/static/multi/copmpare_rbps_tbps.png)
 
-#### TIME
+### TIME
 
-### TIME in seconds
+#### TIME in seconds
 ![plot](./images/static/multi/time_sec.png)
 
-### TIME in minutes
+#### TIME in minutes
 ![plot](./images/static/multi/time_min.png)
 
+### Zero Random Avrage
+
+#### Ansible
+![plot](./images/static/multi/zero_rand_avg/ansible_zero_avg_cpu_ram.png)
+![plot](./images/static/multi/zero_rand_avg/ansible_zero_avg_net.png)
+#### Bash
+![plot](./images/static/multi/zero_rand_avg/bash_zero_avg_cpu_ram.png)
+![plot](./images/static/multi/zero_rand_avg/bash_zero_avg_net.png)
+#### Fabric
+![plot](./images/static/multi/zero_rand_avg/fabric_zero_avg_cpu_ram.png)
+![plot](./images/static/multi/zero_rand_avg/fabric_zero_avg_net.png)
 
 ```
 
